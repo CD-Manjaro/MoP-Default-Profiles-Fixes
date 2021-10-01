@@ -1,14 +1,12 @@
 <HBProfile xsi:noNamespaceSchemaLocation="../../../Schemas/QuestProfileSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <!-- Original contribution by Kickazz006 -->
     <Name>[A - Quest] Human 1-5 [Kick] ($Rev: 3162 $)</Name>
-
     <MinLevel>1</MinLevel>
     <MaxLevel>1001</MaxLevel>
 
     <MinDurability>0.3</MinDurability>
     <MinFreeBagSlots>3</MinFreeBagSlots>
-
-    <!-- NB: Honorbuddy sells before mailing -->
+   
     <SellGrey>true</SellGrey>
     <SellWhite>true</SellWhite>
     <SellGreen>true</SellGreen>
@@ -20,35 +18,29 @@
     <MailGreen>true</MailGreen>
     <MailBlue>true</MailBlue>
     <MailPurple>true</MailPurple>
-
+	
     <TargetElites>false</TargetElites>
-
 
     <AvoidMobs>
         <Mob Name="Garginox" Id="45681" />
         <Mob Name="Landlocked Grouper" Id="45664" />
         <Mob Name="Midsummer Celebrant" Id="16781" />
-
         <!-- Northshire -->
         <!-- <Mob Name="Training Dummy" Id="44548" /> -->
     </AvoidMobs>
-
 
     <Mailboxes>
         <Mailbox Name="Northshire" X="-8908.27" Y="-129.904" Z="80.91549" />
         <Mailbox Name="Goldshire" X="-9456.721" Y="46.77825" Z="56.60653" />
     </Mailboxes>
 
-
     <Vendors>
         <Vendor Name="Dermot Johns" Id="190" Type="Repair" X="-8897.71" Y="-115.3281" Z="81.84091" />
         <Vendor Name="Brother Danil" Id="152" Type="Food" X="-8901.59" Y="-112.716" Z="81.84885" />
     </Vendors>
 
-
     <!-- BEGIN: Quest Overrides -->
     <!-- END: Quest Overrides -->
-
 
     <QuestOrder IgnoreCheckpoints="true" >
         <!-- BEGIN: Checkpoint Block
@@ -64,7 +56,6 @@
         <CustomBehavior File="EnablePlugin" Names="Refreshment Detection" />
 
         <CustomBehavior File="Misc\ProfileCompatibilityInfo" AllowBrokenAddOns="true" AllowBrokenPlugIns="true" />
-
         <LootMobs Value="true" />
         <TargetingDistance Value="null" />    <!-- Use LevelBot default -->
         <UseMount Value="true" />
@@ -451,7 +442,6 @@
                 <CustomBehavior File="UserDialog" AllowBotStop="true" SoundCue="Exclamation" SoundCueInterval="1"
                                 Text="Something went horribly wrong, you're still level 1 and didn't do any quests yet! THIS IS NOT A JOKE\n\nPlease contact the devs to fix the issue!" />
             </If>
-
             <!-- End Class Quests -->
         </If>
 
@@ -475,7 +465,6 @@
         <Objective QuestName="Ending the Invasion!" QuestId="26390" Type="KillMob" MobId="42938" KillCount="1" />
         <TurnIn QuestName="Ending the Invasion!" QuestId="26390" TurnInName="Marshal McBride" TurnInId="197"
                 X="-8913.069" Y="-137.4063" Z="80.8181" />
-
         <If Condition="Me.Race == WoWRace.Human">
             <PickUp QuestName="Report to Goldshire" QuestId="54" GiverName="Marshal McBride" GiverId="197"
                     X="-8913.069" Y="-137.4063" Z="80.8181" />
@@ -488,8 +477,6 @@
         </If>
         <TurnIn QuestName="Rest and Relaxation" QuestId="2158" TurnInName="Innkeeper Farley" TurnInId="295"
                 X="-9462.663" Y="16.19151" Z="56.96266" />
-
-
         <SetGrindArea>
             <GrindArea>
                 <Factions>7</Factions>
@@ -510,10 +497,9 @@
         <GrindTo Level="5" />
         <!-- Elwynn Forest -->
         <CustomBehavior File="LoadProfile" ProfileName="[A - Quest] EK 5-12 [Kick]" RememberProfile="true" />
-    </QuestOrder>    
-    
-<Blackspots>
-     <Blackspot X="-8918.445" Y="-141.6115" Z="80.838" Radius="1.307518" />
-</Blackspots>
+    </QuestOrder>
 
+<Blackspots>
+   <Blackspot X="-8918.445" Y="-141.6115" Z="80.838" Radius="1.307518" />    
+</Blackspots>
 </HBProfile>
