@@ -509,9 +509,11 @@
         </SetGrindArea>
         <GrindTo Level="5" />
         <!-- Elwynn Forest -->
-
         <CustomBehavior File="LoadProfile" ProfileName="[A - Quest] EK 5-12 [Kick]" RememberProfile="true" />
-
-    </QuestOrder>
+    </QuestOrder>    
+    
+<Blackspots>
+     <Blackspot X="-8918.445" Y="-141.6115" Z="80.838" Radius="1.307518" />
+</Blackspots>
 
 </HBProfile>
